@@ -3,8 +3,10 @@ import { AppModule } from "./app.module";
 import { DocumentBuilder, SwaggerModule } from "@nestjs/swagger";
 
 async function start() {
-  const PORT = process.env.PORT || 3001;
+  const PORT = process.env.PORT || 3000;
   const app = await NestFactory.create(AppModule);
+  app.setGlobalPrefix('api');
+
 
   app.enableCors({
     origin: "http://localhost:3000",

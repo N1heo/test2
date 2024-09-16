@@ -1,9 +1,9 @@
 /// <reference types="multer" />
-import { TutorialService } from 'src/tutorial/service/tutorial.service';
-import { CreateUserDto } from 'src/dto/create-user.dto';
-import { CreateCourseDto } from 'src/dto/create-course.dto';
-import { CreateCommentDto } from 'src/dto/create-comment.dto';
-import { LoginUserDto } from 'src/dto/login-user.dto';
+import { TutorialService } from '../service/tutorial.service';
+import { CreateUserDto } from '../../dto/create-user.dto';
+import { CreateCourseDto } from '../../dto/create-course.dto';
+import { CreateCommentDto } from '../../dto/create-comment.dto';
+import { LoginUserDto } from '../../dto/login-user.dto';
 export declare class TutorialController {
     private readonly tutorialService;
     constructor(tutorialService: TutorialService);
